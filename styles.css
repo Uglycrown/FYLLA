@@ -357,6 +357,168 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* Footer Styles */
+.footer {
+    background: white;
+    margin-top: 50px;
+}
+
+.horizontal-line-footer {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    padding: 60px 0 30px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0 30px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-social .social-icon:hover {
+    background: #333;
+    color: white;
+    border-color: #333;
+    transform: translateY(-2px);
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin-bottom: 25px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 12px;
+}
+
+.footer-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    line-height: 1.5;
+}
+
+.footer-link:hover {
+    color: #333;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+}
+
+.footer-bottom .horizontal-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer-copyright {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-separator {
+    color: #ccc;
+    font-size: 14px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header .container {
@@ -395,6 +557,22 @@ body {
     .team-title {
         font-size: 36px;
     }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -412,5 +590,18 @@ body {
 
     .container {
         padding: 0 15px;
+    }
+    
+    .footer-content {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-social {
+        justify-content: center;
     }
 }
