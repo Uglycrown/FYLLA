@@ -365,9 +365,9 @@ body {
 
 .horizontal-line-footer {
     display: block;
-    width: 100%;
-    height: 1px;
-    background: #e0e0e0;
+    width: 98%;
+    height: 2px;
+    background: #808080;
     margin-bottom: 0;
 }
 
@@ -557,17 +557,17 @@ body {
     .team-title {
         font-size: 36px;
     }
-    
+
     .footer-main {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .footer-bottom-content {
         flex-direction: column;
         gap: 20px;
@@ -591,16 +591,16 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .footer-content {
         padding: 40px 0 20px;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    
+
     .footer-social {
         justify-content: center;
     }
